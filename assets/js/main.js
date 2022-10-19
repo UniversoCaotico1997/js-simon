@@ -1,4 +1,8 @@
 
+// stampiamo in pagina i numeri 
+// Selezioniamo un elemento dalla dom (ul)
+    // Utilizziamo il querySelctor
+const ulElement = document.querySelector(`ul`);
 
 
 // Visualizzare in pagina 5 numeri casuali.
@@ -10,21 +14,17 @@ function generateRandomNumber(min, max) {
 for (let i = 1; i <= 5; i++) {
     const randomNumber = generateRandomNumber(1, 100);
     console.log(randomNumber);
-    
-}
-
-// stampiamo in pagina i numeri 
-    // Selezioniamo un elemento dalla dom (ul)
-        // Utilizziamo il querySelctor
-const ulElement = document.querySelector(`ul`);
-
     // creiamo una costante con l' elemento da stampare 
         // Con al suo interno i nuemri random generati
-
-const printRandomNumberEl = `<li>${i}</li>`
-
+    
+    const printRandomNumberEl = `<li>${i}</li>`
+    
     // Infine utilizziamo insert per stamparla a schermo
-ulElement.insertAdjacentHTML(`beforeend`,printRandomNumberEl);
+    ulElement.insertAdjacentHTML(`beforeend`,printRandomNumberEl);
+}
+
+
+
 
 
 
